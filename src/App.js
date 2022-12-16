@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Titulo from './Components/Titulo';
 import Personas from './Components/Personas';
+import ListaPokemones from './Components/ListaPokemones';
 
 /** creando un arreglo de personas */
 const personas = [
@@ -41,9 +42,12 @@ function App() {
           <Personas arreglo_persona={personas} />
           <br></br>
           <Titulo titulo="Listado de Pokemones"/>
+          <ListaPokemones />
+          <br></br>
+          
       </div>
+      <Footer fecha={new Date()}></Footer>
       
-      <Footer fecha={new Date()}/>
     </div>
   );
 }
